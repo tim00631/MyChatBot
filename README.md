@@ -21,24 +21,26 @@ A Facebook messenger bot based on a finite state machine
 
 #### initial:
 
-![initial](./img/initial.png){:height="250" width="250"}
+![initial](./img/initial.png)
 
 #### get:
 
-![get](./img/get.png){:height="250" width="250"}
+![get](./img/get.png)
 
 #### money:
 
-![Money](./img/Money.png){:height="250" width="250"}
+![Money](./img/Money.png)
 
 #### Beauty:
 
-![Beauty](./img/Beauty.png){:height="250" width="250"}
+![Beauty](./img/Beauty.png)
 
 #### help:
 Go Back to introduction...
 
-![initial](./img/initial.png){:height="250" width="250"}
+
+
+![initial](./img/initial.png)
 
 ## Reference
 
