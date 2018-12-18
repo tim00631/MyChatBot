@@ -1,43 +1,89 @@
 from bottle import route, run, request, abort, static_file
-
 from fsm import TocMachine
-
-
-VERIFY_TOKEN = "Your Webhook Verify Token"
+import config
+config.init()
+PTT_URL = "https://www.ptt.cc"
+VERIFY_TOKEN = "123"
 machine = TocMachine(
     states=[
-        'user',
-        'state1',
-        'state2'
+        'initial',
+        'intro',
+        'ready',
+        'get',
+        'beauty',
+        'money'
     ],
     transitions=[
         {
             'trigger': 'advance',
-            'source': 'user',
-            'dest': 'state1',
-            'conditions': 'is_going_to_state1'
+            'source': 'initial',
+            'dest': 'intro',
+            'conditions': 'initial_to_intro'
+
         },
         {
             'trigger': 'advance',
-            'source': 'user',
-            'dest': 'state2',
-            'conditions': 'is_going_to_state2'
+            'source': 'intro',
+            'dest': 'get',
+            'conditions': 'intro_to_get'
         },
+        {
+            'trigger': 'advance',
+            'source': 'intro',
+            'dest': 'beauty',
+            'conditions': 'intro_to_beauty'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'intro',
+            'dest': 'money',
+            'conditions': 'intro_to_money'
+        },
+
+        {
+            'trigger': 'advance',
+            'source': 'ready',
+            'dest': 'get',
+            'conditions': 'ready_to_get'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'ready',
+            'dest': 'beauty',
+            'conditions': 'ready_to_beauty'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'ready',
+            'dest': 'money',
+            'conditions': 'ready_to_money'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'ready',
+            'dest': 'intro',
+            'conditions': 'ready_to_intro'
+        },
+
         {
             'trigger': 'go_back',
             'source': [
-                'state1',
-                'state2'
+                'get',
+                'beauty',
+                'money'
             ],
-            'dest': 'user'
+            'dest': 'ready'
         }
     ],
-    initial='user',
+    initial='initial',
     auto_transitions=False,
     show_conditions=True,
+    ignore_invalid_triggers=True
 )
 
-
+machine.get_graph().draw('fsm.png', prog='dot', format='png')
+config.save_image()
+#config.movie()
 @route("/webhook", method="GET")
 def setup_webhook():
     mode = request.GET.get("hub.mode")
@@ -65,11 +111,5 @@ def webhook_handler():
         return 'OK'
 
 
-@route('/show-fsm', methods=['GET'])
-def show_fsm():
-    machine.get_graph().draw('fsm.png', prog='dot', format='png')
-    return static_file('fsm.png', root='./', mimetype='image/png')
-
-
 if __name__ == "__main__":
-    run(host="localhost", port=5000, debug=True, reloader=True)
+    run(host="localhost", port=5000, debug=True)

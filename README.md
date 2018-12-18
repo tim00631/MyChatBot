@@ -1,63 +1,46 @@
-# TOC Project 2019
+## Opening
 
-Template Code for TOC Project 2019
+This Project is for 2019 T.O.C Course in NCKU CSIE 
 
 A Facebook messenger bot based on a finite state machine
 
-More details in the [Slides](https://hackmd.io/p/SkpBR-Yam#/) and [FAQ](https://hackmd.io/s/B1Xw7E8kN)
-
-## Setup
-
-### Prerequisite
-* Python 3
-* Facebook Page and App
-* HTTPS Server
-
-#### Install Dependency
-```sh
-pip3 install -r requirements.txt
-```
-
-* pygraphviz (For visualizing Finite State Machine)
-    * [Setup pygraphviz on Ubuntu](http://www.jianshu.com/p/a3da7ecc5303)
-
-#### Secret Data
-
-`VERIFY_TOKEN` and `ACCESS_TOKEN` **MUST** be set to proper values.
-Otherwise, you might not be able to run your code.
-
-#### Run Locally
-You can either setup https server or using `ngrok` as a proxy.
-
-**`ngrok` would be used in the following instruction**
-
-```sh
-./ngrok http 5000
-```
-
-After that, `ngrok` would generate a https URL.
-
-#### Run the sever
-
-```sh
-python3 app.py
-```
-
 ## Finite State Machine
-![fsm](./img/show-fsm.png)
+![fsm](./fsm.png)
+
+##State:
+`initial`,
+`intro`,
+`ready`,
+`get`,
+`beauty`,
+`money`
+
 
 ## Usage
-The initial state is set to `user`.
+    
 
-Every time `user` state is triggered to `advance` to another state, it will `go_back` to `user` state after the bot replies corresponding message.
+####initial:
 
-* user
-	* Input: "go to state1"
-		* Reply: "I'm entering state1"
+![initial](./img/initial.png)
 
-	* Input: "go to state2"
-		* Reply: "I'm entering state2"
+####get:
 
+![get](./img/get.png)
+
+####money:
+
+![Money](./img/Money.png)
+
+####Beauty:
+
+![Beauty](./img/Beauty.png)
+
+####help:
+Go Back to introduction...
+![initial](./img/initial.png)
 
 ## Reference
-[TOC-Project-2017](https://github.com/Lee-W/TOC-Project-2017) ❤️ [@Lee-W](https://github.com/Lee-W)
+
+https://goo.gl/u9eQke ,給初學者的 Python 網頁爬蟲與資料分析
+https://developers.facebook.com/ Facebook Messenger API
+https://www.crummy.com/software/BeautifulSoup/bs4/doc/ Beautiful Soup Documentation
