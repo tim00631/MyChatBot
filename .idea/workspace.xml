@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e659ba72-f467-4e3e-af78-7648843b1642" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_example/fsm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_example/hello.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_example/send_msg.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_example/setup_webhook.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_example/webhook_handler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fsm.py" beforeDir="false" afterPath="$PROJECT_DIR$/fsm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +24,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="config" value="1" />
-          <entry key="gitignore" value="1" />
+          <entry key="gitignore" value="2" />
           <entry key="md" value="1" />
           <entry key="png" value="13" />
           <entry key="py" value="9" />
@@ -43,7 +34,7 @@
         <counts>
           <entry key="Image" value="13" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="9" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -53,13 +44,13 @@
           <entry key="Python Console" value="47" />
           <entry key="config" value="10" />
           <entry key="dummy" value="3" />
-          <entry key="md" value="642" />
+          <entry key="md" value="711" />
           <entry key="py" value="7937" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="642" />
+          <entry key="Markdown" value="711" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Python" value="7994" />
         </counts>
@@ -100,11 +91,18 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="322">
-                <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+              <first_editor relative-caret-position="339">
+                <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
               </first_editor>
               <second_editor />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1251" />
           </provider>
         </entry>
       </file>
@@ -296,12 +294,12 @@
     <frame x="19" y="41" width="1400" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32892805" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32892805" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32892805" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -391,13 +389,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1251" />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="322">
-            <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <first_editor relative-caret-position="339">
+            <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
           </first_editor>
           <second_editor />
         </state>

@@ -7,7 +7,7 @@ A Facebook messenger bot based on a finite state machine
 ## Finite State Machine
 ![fsm](./fsm.png)
 
-##State:
+## State:
 `initial`,
 `intro`,
 `ready`,
@@ -19,28 +19,30 @@ A Facebook messenger bot based on a finite state machine
 ## Usage
     
 
-####initial:
+#### initial:
 
 ![initial](./img/initial.png)
 
-####get:
+#### get:
 
 ![get](./img/get.png)
 
-####money:
+#### money:
 
 ![Money](./img/Money.png)
 
-####Beauty:
+#### Beauty:
 
 ![Beauty](./img/Beauty.png)
 
-####help:
+#### help:
 Go Back to introduction...
 ![initial](./img/initial.png)
 
 ## Reference
 
 https://goo.gl/u9eQke ,給初學者的 Python 網頁爬蟲與資料分析
+
 https://developers.facebook.com/ Facebook Messenger API
+
 https://www.crummy.com/software/BeautifulSoup/bs4/doc/ Beautiful Soup Documentation
