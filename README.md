@@ -5,7 +5,7 @@ This Project is for 2019 T.O.C Course in NCKU CSIE
 A Facebook messenger bot based on a finite state machine
 
 ## Finite State Machine
-![fsm](./fsm.png)
+![fsm](./fsm.png){:height="400"}
 
 ## State:
 `initial`,
@@ -21,23 +21,24 @@ A Facebook messenger bot based on a finite state machine
 
 #### initial:
 
-![initial](./img/initial.png)
+![initial](./img/initial.png){:height="250" width="250"}
 
 #### get:
 
-![get](./img/get.png)
+![get](./img/get.png){:height="250" width="250"}
 
 #### money:
 
-![Money](./img/Money.png)
+![Money](./img/Money.png){:height="250" width="250"}
 
 #### Beauty:
 
-![Beauty](./img/Beauty.png)
+![Beauty](./img/Beauty.png){:height="250" width="250"}
 
 #### help:
 Go Back to introduction...
-![initial](./img/initial.png)
+
+![initial](./img/initial.png){:height="250" width="250"}
 
 ## Reference
 
