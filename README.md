@@ -5,7 +5,7 @@ This Project is for 2019 T.O.C Course in NCKU CSIE
 A Facebook messenger bot based on a finite state machine
 
 ## Finite State Machine
-![fsm](./fsm.png){:height="400"}
+![fsm](./fsm.png)
 
 ## State:
 `initial`,
