@@ -33,11 +33,11 @@ def save_image():
         day = int(time.strftime("%d"))
         for i in range(3):
             date = month + "/" + str(day - i)  # Access the last three days articles
-            current_articles, prev_url = get_articles(current_page, date, 3)
+            current_articles, prev_url = get_articles(current_page, date, 2)
             while current_articles:  # if current page has articles we want to add
                 articles += current_articles # add them
                 current_page = get_web_page(PTT_URL + prev_url)  # ready to previous page
-                current_articles, prev_url = get_articles(current_page, date, 3)  # Go!
+                current_articles, prev_url = get_articles(current_page, date, 2)  # Go!
             for article in articles:
                 page = get_web_page(PTT_URL + article['href'])  # Enter the article
                 if page:

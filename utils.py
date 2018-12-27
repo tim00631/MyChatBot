@@ -7,11 +7,11 @@ url = "{0}/me/messages?access_token={1}".format(GRAPH_URL, ACCESS_TOKEN)
 
 
 def send_text_message(id, text):
-    payload = {
+    json = {
         "recipient": {"id": id},
         "message": {"text": text}
     }
-    response = requests.post(url, json=payload)
+    response = requests.post(url, json=json)
 
     if response.status_code != 200:
         print("Unable to send message: " + response.text)
@@ -19,7 +19,7 @@ def send_text_message(id, text):
 
 
 def send_image_url(id, img_url):
-    payload = {
+    json = {
         "recipient": {"id": id},
         "message": {
             "attachment": {
@@ -31,7 +31,7 @@ def send_image_url(id, img_url):
             }
         }
     }
-    response = requests.post(url, json=payload)
+    response = requests.post(url, json=json)
 
     if response.status_code != 200:
         print("Unable to send message: " + response.text)

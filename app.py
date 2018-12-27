@@ -83,7 +83,7 @@ machine = TocMachine(
 
 machine.get_graph().draw('fsm.png', prog='dot', format='png')
 config.save_image()
-#config.movie()
+
 @route("/webhook", method="GET")
 def setup_webhook():
     mode = request.GET.get("hub.mode")

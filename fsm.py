@@ -16,47 +16,55 @@ class TocMachine(GraphMachine):
         )
 
     def initial_to_intro(self, event):
-        if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
+        # if event.get("message"):
             text = event['message']['text']
             return text.lower() == '開始'
         return False
     def intro_to_get(self, event):
-        if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
+        # if event.get("message"):
             text = event['message']['text']
             return text.lower() == '抽卡'
         return False
     def intro_to_beauty(self, event):
-        if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
+        # if event.get("message"):
             text = event['message']['text']
             return text.lower() == '表特'
         return False
 
     def intro_to_money(self, event):
-        if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
+        # if event.get("message"):
             text = event['message']['text']
             return text.lower() == '省錢'
         return False
 
     def ready_to_get(self, event):
-        if event.get("message"):
+        #if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
             text = event['message']['text']
             return text.lower() == '抽卡'
         return False
 
     def ready_to_beauty(self, event):
-        if event.get("message"):
+        #if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
             text = event['message']['text']
             return text.lower() == '表特'
         return False
 
     def ready_to_money(self, event):
-        if event.get("message"):
+        # if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
             text = event['message']['text']
             return text.lower() == '省錢'
         return False
 
     def ready_to_intro(self, event):
-        if event.get("message"):
+        #if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
             text = event['message']['text']
             return text.lower() == 'help'
         return False
